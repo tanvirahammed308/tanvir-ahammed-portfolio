@@ -27,7 +27,7 @@ const Hero = () => {
         <div className="w-full md:w-1/2 p-6 md:p-10 flex flex-col items-center justify-center space-y-4 text-center">
           <h3 className="text-xl md:text-2xl font-semibold">
             Hi, This is
-            <span className="block text-4xl font-bold text-[#1A1D41] h-8">
+            <span className="block text-4xl font-bold text-[#1A1D41] h-16 md:h-8">
               {text}
             </span>
           </h3>
