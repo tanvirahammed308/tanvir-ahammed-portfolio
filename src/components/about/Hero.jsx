@@ -1,5 +1,6 @@
 import React from 'react';
-import name from "../../assets/img/name-logo.png";
+import Lottie from 'lottie-react';
+import animation from "../../../public/Animation - 1744422543226.json";
 
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter, FaSquareInstagram } from "react-icons/fa6";
@@ -35,11 +36,12 @@ const Hero = () => {
         </div>
 
         {/* Image Section */}
+
         <div className="w-full md:w-1/2 p-6 flex  md:-translate-y-12">
-          <img
-            src={name}
-            alt="Md Tanvir Ahammed Logo"
-            className="w-full h-auto object-contain max-h-96 rounded-md"
+        <Lottie 
+            animationData={animation} 
+            loop 
+            className="w-full max-h-96"
           />
         </div>
       </div>

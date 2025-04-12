@@ -48,7 +48,7 @@ const Navbar = () => {
       {/* Mobile Menu Toggle */}
       <div className="md:hidden">
         <button onClick={mobileMenuToggle} className="text-white">
-          {mobileMenuOpen ? <MdClose size={24} /> : <MdOutlineMenuOpen size={24} />}
+          {mobileMenuOpen ? <MdClose size={26} /> : <MdOutlineMenuOpen size={26} />}
         </button>
       </div>
 
