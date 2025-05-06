@@ -1,0 +1,64 @@
+[
+    { "id":1,
+      "name": "Organic Website",
+      "technologies": ["React", "Tailwind CSS", "react-router-dom", "Google Maps"],
+      "features": [
+        "Product Catalog",
+        "Contact & about us",
+        "Responsive Design"
+      ],
+      "responsibilities": [
+        "Developed front-end UI using React and Tailwind CSS"
+      ],
+      "challenges": [
+        "Optimizing performance for large product data",
+        "Maintaining responsive design across devices"
+      ],
+      "img": "https://i.ibb.co.com/67yNvqdC/nature.png"
+    },
+    {"id":2,
+      "name": "Travel Website",
+      "technologies": ["React", "Tailwind CSS", "react-router-dom"],
+      "features": [
+        "Destination Guides",
+        "Trip Planning",
+        "Hotel & Flight Booking",
+        "User Reviews",
+        "Blog",
+        "Dynamic Map Integration"
+      ],
+      "responsibilities": [
+        "Built dynamic pages using React Router",
+        "Integrated Google Maps API for interactive maps",
+        "Developed booking functionalities using Firebase",
+        "Implemented responsive carousels with Swiper.js"
+      ],
+      "challenges": [
+        "Implementing advanced filtering for destinations and tours",
+        "Optimizing API calls for smooth user experience on slower networks"
+      ],
+      "img": "https://i.ibb.co.com/XfrGjQjw/travel.png"
+    },
+    {
+        "id":3,
+      "name": "Restaurant Website",
+      "technologies": ["React", "Tailwind CSS", "react-router-dom"],
+      "features": [
+        "Online Menu",
+        "Order & Delivery System",
+        "Table Reservation",
+        "Customer Reviews"
+      ],
+      "responsibilities": [
+        "Designed UI/UX with a focus on customer engagement",
+        "Built order management system",
+        "Implemented admin dashboard for restaurant staff"
+      ],
+      "challenges": [
+        "Implementing an intuitive and responsive table reservation system",
+        "Handling high traffic during peak meal times without performance issues"
+      ],
+      "img": "https://i.ibb.co.com/sv7bfy6W/poco.png"
+    }
+  ]
+  

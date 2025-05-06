@@ -2,11 +2,11 @@
 
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import img1 from "../../assets/img/hero.jpg";
+import nature from "../../assets/img/projects/nature.png"
 import travel from "../../assets/img/projects/travel.png";
-import img3 from "../../assets/img/icons/css.png"; // replace with your own
+import poco from "../../assets/img/projects/poco.png"
 
-const images = [img1, travel, img3];
+const images = [nature, travel, poco];
 
 const MyWorks = () => {
   const [index, setIndex] = useState(0);

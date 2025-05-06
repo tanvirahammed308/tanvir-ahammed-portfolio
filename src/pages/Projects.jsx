@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FaArrowCircleDown } from "react-icons/fa";
-import travel from "../assets/img/projects/travel.png";
+
 import { IoIosSend } from "react-icons/io";
 import { Link } from "react-router-dom";
 import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
 import { FaXTwitter, FaSquareInstagram } from "react-icons/fa6";
 
 const Projects = () => {
+  const [projects,setProjects]=useState([]);
+
+  
+
+  useEffect(()=>{
+    fetch("/projects.json")
+    .then(res=>res.json())
+    .then((data)=>setProjects(data))
+  },[])
+
   return (
     <div className="contact-page px-5 md:px-0 mt-5">
       {/* Hero Section */}
@@ -28,11 +38,12 @@ const Projects = () => {
       {/* project card  */}
 
       <section className="mt-6 bg-gray-200 rounded-md overflow-hidden shadow-lg">
-        <div className="flex flex-col  md:flex-row items-center">
+        {
+          projects.map((project,index)=><div key={index} className="flex flex-col  md:flex-row items-center px-10">
           {/* Image */}
           <div className="w-full md:w-1/2">
             <img
-              src={travel}
+              src={project.img}
               alt="img"
               className="w-full h-full object-cover rounded-t-md md:rounded-none md:rounded-l-md"
             />
@@ -41,12 +52,10 @@ const Projects = () => {
           {/* Content */}
           <div className="w-full md:w-1/2 p-6 md:p-10 flex flex-col items-center justify-center space-y-4 text-center">
             <h3 className="text-2xl md:text-4xl font-bold text-[#1A1D41] ">
-              Travel Webside
+             {project.name}
             </h3>
             <p className="text-gray-700 max-w-md">
-              As a travel enthusiast and web developer, I wanted to create a
-              platform that makes domestic travel easier, more exciting, and
-              accessible for everyone.
+              {project.description}
             </p>
 
             <div className="divider w-full text-sm text-gray-600">
@@ -55,8 +64,8 @@ const Projects = () => {
 
             {/* button */}
 
-            <div className="flex gap-10">
-              <Link to="https://traveldesh.netlify.app/">
+            <div className="flex flex-col md:flex-row gap-5 md:gap-10">
+              <Link to={project.liveLink}>
                 <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
                   <span className="relative px-5  transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent flex items-center text-xl">
                     Live
@@ -64,7 +73,7 @@ const Projects = () => {
                   </span>
                 </button>
               </Link>
-              <Link to="https://github.com/tanvirahammed308/traveldesh-app-img-responsive">
+              <Link to={project.gitLink}>
                 <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
                   <span className="relative px-5  transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent flex items-center text-xl">
                     Git
@@ -72,7 +81,7 @@ const Projects = () => {
                   </span>
                 </button>
               </Link>
-              <Link to="https://github.com/tanvirahammed308/traveldesh-app-img-responsive">
+              <Link to={`/projects/${project.id}`}>
                 <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
                   <span className="relative px-5  transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent flex items-center text-xl">
                     Details
@@ -92,7 +101,8 @@ const Projects = () => {
                      <a href="https://github.com" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
                    </div>
           </div>
-        </div>
+        </div>)
+        }
       </section>
 
       {/* Contact Details */}

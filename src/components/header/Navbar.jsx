@@ -15,7 +15,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="relative z-50 bg-[#1a1d41] text-white px-4 py-6 md:py-3 md:rounded shadow-xl w-full lg:max-w-[1300px] mx-auto flex items-center justify-between">
+    <div className='bg-[#1a1d41]'>
+       <nav className="relative z-50  text-white px-4 py-8 md:py-3  shadow-xl w-full md:w-11/12 mx-auto flex items-center justify-between md:justify-evenly">
       
       {/* Logo */}
       <div className="text-2xl font-bold">
@@ -73,6 +74,9 @@ const Navbar = () => {
         </div>
       )}
     </nav>
+
+    </div>
+   
   );
 };
 
