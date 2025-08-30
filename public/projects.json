@@ -1,25 +1,56 @@
 [
-    {
-      "id": 1,
-      "name": "Organic Website",
-      "description": "A clean and eco-friendly website promoting organic products, sustainable farming, and healthy living. It includes a product catalog, blogs, and educational content on organic practices, with a nature-inspired design that emphasizes trust and transparency.",
-      "img": "https://i.ibb.co.com/67yNvqdC/nature.png",
-      "gitLink": "https://github.com/tanvirahammed308/nature-circle",
-      "liveLink": "https://nature-circle.netlify.app/"
-    },
-    { "id": 2,
-      "name": "Travel Website",
-      "description": "An all-in-one travel platform with destination guides, booking tools, and user stories. It helps travelers plan trips with detailed itineraries, maps, and real-time travel info, wrapped in a sleek, mobile-friendly interface.",
-      "img": "https://i.ibb.co.com/XfrGjQjw/travel.png",
-      "gitLink": "https://github.com/tanvirahammed308/traveldesh-app-img-responsive",
-      "liveLink": "https://traveldesh.netlify.app/"
-    },
-    { "id": 3,
-      "name": "Restaurant Website",
-      "description": "A stylish website for restaurants featuring online menus, reservations, and food ordering. It includes chef profiles, customer reviews, and event updates, designed to enhance the digital dining experience.",
-      "img": "https://i.ibb.co.com/sv7bfy6W/poco.png",
-      "gitLink": "https://github.com/tanvirahammed308/poco-resturant",
-      "liveLink": "https://poco-resturant.netlify.app/"
-    }
-  ]
-  
+  {
+    "id": 1,
+    "name": "Organic Website",
+    "description": "A clean and eco-friendly website promoting organic products, sustainable farming, and healthy living. It includes a product catalog, blogs, and educational content on organic practices, with a nature-inspired design that emphasizes trust and transparency.",
+    "img": "https://i.ibb.co.com/67yNvqdC/nature.png",
+    "gitLink": "https://github.com/tanvirahammed308/nature-circle",
+    "liveLink": "https://nature-circle.netlify.app/",
+    "type": "frontend"
+  },
+  {
+    "id": 2,
+    "name": "Travel Website",
+    "description": "An all-in-one travel platform with destination guides, booking tools, and user stories. It helps travelers plan trips with detailed itineraries, maps, and real-time travel info, wrapped in a sleek, mobile-friendly interface.",
+    "img": "https://i.ibb.co.com/XfrGjQjw/travel.png",
+    "gitLink": "https://github.com/tanvirahammed308/traveldesh-app-img-responsive",
+    "liveLink": "https://traveldesh.netlify.app/",
+    "type": "frontend"
+  },
+  {
+    "id": 3,
+    "name": "Restaurant Website",
+    "description": "A stylish website for restaurants featuring online menus, reservations, and food ordering. It includes chef profiles, customer reviews, and event updates, designed to enhance the digital dining experience.",
+    "img": "https://i.ibb.co.com/sv7bfy6W/poco.png",
+    "gitLink": "https://github.com/tanvirahammed308/poco-resturant",
+    "liveLink": "https://poco-resturant.netlify.app/",
+    "type": "frontend"
+  },
+  {
+    "id": 4,
+    "name": "Global Language Hub",
+    "description": "Education Learning Website with 3 roles (Admin, Instructor, User). Includes a payment system. Instructors can add/modify classes. User-friendly interface for learning and class management.",
+    "img": "https://i.ibb.co.com/N66zPd36/global-lan.png",
+    "gitLink": "https://github.com/tanvirahammed308/global-lan-mern",
+    "liveLink": "https://venerable-cat-31d483.netlify.app/",
+    "type": "mern"
+  },
+  {
+    "id": 5,
+    "name": "Toy-Garden",
+    "description": "E-Commerce Website for toy cars. Includes car sections, New Arrival section, and CRUD operations for cars. Easily manageable with authentication and real-time updates.",
+    "img": "https://i.ibb.co.com/DPw6xQhz/toy-garden.png",
+    "gitLink": "https://github.com/tanvirahammed308/toy_garden_mern",
+    "liveLink": "https://stunning-starlight-98a765.netlify.app/",
+    "type": "mern"
+  },
+  {
+    "id": 6,
+    "name": "Foodie",
+    "description": "Online food delivery website with menu, order section, and dashboard. Includes an Admin panel where Admin can add/modify food items and manage users. User-friendly design with secure authentication.",
+    "img": "https://i.ibb.co.com/ZRwr2KFP/foodie.png",
+    "gitLink": "https://github.com/yourusername/foodie",
+    "liveLink": "https://bucolic-salmiakki-124681.netlify.app/",
+    "type": "mern"
+  }
+]

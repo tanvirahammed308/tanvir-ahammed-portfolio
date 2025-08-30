@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <div className='bg-[#1a1d41]'>
-       <nav className="relative z-50  text-white px-4 py-8 md:py-3  shadow-xl w-full md:w-11/12 mx-auto flex items-center justify-between md:justify-evenly">
+       <nav className="relative z-50  text-white  py-4   shadow-xl w-full   flex  justify-between container mx-auto px-5 md:px-0">
       
       {/* Logo */}
       <div className="text-2xl font-bold">
