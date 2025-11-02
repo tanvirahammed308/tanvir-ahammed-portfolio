@@ -28,24 +28,21 @@
   },
   {
     "id": 4,
-    "name": "Global Language Hub",
-    "description": "Education Learning Website with 3 roles (Admin, Instructor, User). Includes a payment system. Instructors can add/modify classes. User-friendly interface for learning and class management.",
-    "img": "https://i.ibb.co.com/N66zPd36/global-lan.png",
-    "gitLink": "https://github.com/tanvirahammed308/global-lan-mern",
-    "liveLink": "https://venerable-cat-31d483.netlify.app/",
+    "name": "ShopEase",
+    "description": "ShopEase is a modern and user-friendly e-commerce platform designed to provide a seamless online shopping experience. Users can browse a wide range of products, add items to their cart, and securely complete purchases. The website features user authentication, profile management, and an admin panel for managing products, orders, and users. Integrated with a robust backend, ShopEase ensures secure transactions, efficient order handling, and responsive design for both desktop and mobile users.",
+    "img": "https://i.ibb.co/PsgW653s/shop-ease.png",
+    "frontend":"NextJS, TailwindCss,React Hook Form,Redux Toolkit",
+    "backend":"NodeJS, ExpressJS, Mongoose, JWT, Bcrypt,Cloudinary",
+    "gitLink_client":"Git_Link_Client",
+    "gitLink_server":"Git_Link_Server",
+    "gitLinkClient": "https://github.com/tanvirahammed308/shop-ease-client",
+    "gitLinkServer": "https://github.com/tanvirahammed308/shop-ease-server",
+    "liveLink": "https://shope-ease-bd.netlify.app/",
     "type": "mern"
   },
+  
   {
     "id": 5,
-    "name": "Toy-Garden",
-    "description": "E-Commerce Website for toy cars. Includes car sections, New Arrival section, and CRUD operations for cars. Easily manageable with authentication and real-time updates.",
-    "img": "https://i.ibb.co.com/DPw6xQhz/toy-garden.png",
-    "gitLink": "https://github.com/tanvirahammed308/toy_garden_mern",
-    "liveLink": "https://stunning-starlight-98a765.netlify.app/",
-    "type": "mern"
-  },
-  {
-    "id": 6,
     "name": "Foodie",
     "description": "Online food delivery website with menu, order section, and dashboard. Includes an Admin panel where Admin can add/modify food items and manage users. User-friendly design with secure authentication.",
     "img": "https://i.ibb.co.com/ZRwr2KFP/foodie.png",

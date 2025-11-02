@@ -88,8 +88,20 @@ const Projects = () => {
               <h3 className="text-2xl md:text-4xl font-bold text-[#1A1D41] ">
                 {project.name}
               </h3>
-              <p className="text-gray-700 max-w-md">{project.description}</p>
+              <p className="text-gray-700 max-w-md text-left">{project.description}</p>
+              <div className="text-left">
+                {
+                project.frontend && <p className="font-bold text-[#021820]">Frontend:{" "}{project.frontend}</p>
 
+              }
+              {
+                project.backend && <p className="font-bold text-[#021820]">Backend:{" "}{project.backend}</p>
+
+              }
+
+              </div>
+              
+              
               <div className="divider w-full text-sm text-gray-600">
                 More Options
               </div>
@@ -98,20 +110,45 @@ const Projects = () => {
               <div className="flex flex-row gap-5 md:gap-10">
                 <Link to={project.liveLink}>
                   <button className="relative inline-flex items-center justify-center p-0.5 mb-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 hover:text-white">
-                    <span className="relative px-5 py-2 bg-white rounded-md group-hover:bg-transparent flex items-center text-xl">
+                    <span className="relative px-5 py-2 bg-white rounded-md group-hover:bg-transparent flex items-center text-sm">
                       Live
                       <IoIosSend />
                     </span>
                   </button>
                 </Link>
-                <Link to={project.gitLink}>
+                {
+                  project.gitLink_client ? <Link to={project.gitLinkClient}>
                   <button className="relative inline-flex items-center justify-center p-0.5 mb-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 hover:text-white">
-                    <span className="relative px-5 py-2 bg-white rounded-md group-hover:bg-transparent flex items-center text-xl">
-                      Git
+                    <span className="relative px-5 py-2 bg-white rounded-md group-hover:bg-transparent flex items-center text-sm">
+                      {
+                        project.gitLink_client
+                      }
+                      <IoIosSend />
+                    </span>
+                  </button>
+                </Link>:<Link to={project.gitLink}>
+                  <button className="relative inline-flex items-center justify-center p-0.5 mb-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 hover:text-white">
+                    <span className="relative px-5 py-2 bg-white rounded-md group-hover:bg-transparent flex items-center text-sm">
+                      Git Link
                       <IoIosSend />
                     </span>
                   </button>
                 </Link>
+                }
+                {
+                  project.gitLink_server && <Link to={project.gitLinkServer}>
+                  <button className="relative inline-flex items-center justify-center p-0.5 mb-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 hover:text-white">
+                    <span className="relative px-5 py-2 bg-white rounded-md group-hover:bg-transparent flex items-center text-sm">
+                      {
+                        project.gitLink_server
+                      }
+                      <IoIosSend />
+                    </span>
+                  </button>
+                </Link>
+                }
+                
+                
                 {/* <Link to={`/projects/${project.id}`}>
                   <button className="relative inline-flex items-center justify-center p-0.5 mb-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 hover:text-white">
                     <span className="relative px-5 py-2 bg-white rounded-md group-hover:bg-transparent flex items-center text-xl">
